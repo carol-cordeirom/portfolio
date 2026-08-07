@@ -31,7 +31,10 @@ export default function Navbar({ activeSection }: NavbarProps) {
       </div>
 
       {/* Mobile nav */}
-      <div className="flex md:hidden items-center justify-end h-full px-section-px-sm">
+      <div className="flex md:hidden items-center justify-between h-full px-section-px-sm">
+        <a href="#home" className="font-space-grotesk font-medium text-text-primary text-[14px] uppercase tracking-[0.84px]">
+          Carol Cordeiro
+        </a>
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="flex flex-col gap-[6px] p-2"

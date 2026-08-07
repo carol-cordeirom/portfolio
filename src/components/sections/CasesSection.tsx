@@ -49,7 +49,7 @@ export default function CasesSection() {
       </div>
 
       {/* Keywords sidebar — desktop only */}
-      <div className="hidden lg:block absolute top-section-py-md xl:top-section-px-xl right-section-px-md xl:right-section-px-xl font-inter font-medium text-text-primary-low text-right text-keyword-md xl:text-[24px] xl:leading-[1.5] uppercase">
+      <div className="hidden md:block absolute top-section-py-md xl:top-section-px-xl right-section-px-md xl:right-section-px-xl font-inter font-medium text-text-primary-low text-right text-keyword-md xl:text-[24px] xl:leading-[1.5] uppercase">
         {KEYWORDS.slice(0, 2).map((group, i) => (
           <div key={i} className={i === 0 ? "" : "mt-8"}>
             {group.map((keyword) => (
