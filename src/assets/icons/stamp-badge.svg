@@ -1,0 +1,8 @@
+<svg width="251" height="251" viewBox="0 0 251 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="circle" d="M 125.5,125.5 m -100,0 a 100,100 0 1,1 200,0 a 100,100 0 1,1 -200,0"/>
+  </defs>
+  <text font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="500" fill="#434549" letter-spacing="8" text-transform="uppercase">
+    <textPath href="#circle" startOffset="0%">DESIGN &bull; DESIGN &bull; DESIGN &bull; DESIGN &bull; </textPath>
+  </text>
+</svg>
