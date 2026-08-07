@@ -1,6 +1,51 @@
 import { KEYWORDS } from "@/data/portfolio";
-import yearBadge from "@/assets/icons/year-badge.svg";
-import stampBadge from "@/assets/icons/stamp-badge.svg";
+
+function YearBadge() {
+  return (
+    <div className="w-full h-full relative overflow-hidden select-none" aria-hidden="true">
+      <div
+        className="absolute font-space-grotesk font-normal text-shape-decorative-low leading-[0.9] tracking-[-0.02em]"
+        style={{
+          fontSize: "clamp(80px, 10vw, 140px)",
+          transform: "rotate(-20deg)",
+          transformOrigin: "center center",
+          top: "-10%",
+          left: "-5%",
+        }}
+      >
+        <span className="block">// 20</span>
+        <span className="block pl-[0.6em]">26</span>
+      </div>
+    </div>
+  );
+}
+
+function StampBadge() {
+  const text = "DESIGN • DESIGN • DESIGN • DESIGN • ";
+  return (
+    <div className="w-full h-full relative select-none" aria-hidden="true">
+      <svg viewBox="0 0 251 251" className="w-full h-full">
+        <defs>
+          <path
+            id="stamp-circle"
+            d="M 125.5,125.5 m -95,0 a 95,95 0 1,1 190,0 a 95,95 0 1,1 -190,0"
+          />
+        </defs>
+        <text
+          fill="#434549"
+          fontSize="16"
+          fontFamily="'Space Grotesk', sans-serif"
+          fontWeight="500"
+          letterSpacing="6"
+        >
+          <textPath href="#stamp-circle" startOffset="0%">
+            {text}
+          </textPath>
+        </text>
+      </svg>
+    </div>
+  );
+}
 
 export default function HeroSection() {
   return (
@@ -11,19 +56,11 @@ export default function HeroSection() {
       <div className="flex flex-col gap-[120px] md:gap-[168px] lg:gap-[200px] xl:gap-[216px]">
         {/* Decorations row */}
         <div className="flex items-center justify-between h-[140px] md:h-[180px] lg:h-[220px] xl:h-[251px]">
-          <div className="w-[160px] md:w-[200px] lg:w-[250px] xl:w-[286px] h-full relative">
-            <img
-              src={yearBadge}
-              alt=""
-              className="absolute inset-0 w-full h-full"
-            />
+          <div className="w-[160px] md:w-[200px] lg:w-[250px] xl:w-[286px] h-full">
+            <YearBadge />
           </div>
-          <div className="w-[140px] md:w-[180px] lg:w-[220px] xl:w-[251px] h-[140px] md:h-[180px] lg:h-[220px] xl:h-[251px] relative">
-            <img
-              src={stampBadge}
-              alt=""
-              className="absolute inset-0 w-full h-full"
-            />
+          <div className="w-[140px] md:w-[180px] lg:w-[220px] xl:w-[251px] h-[140px] md:h-[180px] lg:h-[220px] xl:h-[251px]">
+            <StampBadge />
           </div>
         </div>
 
