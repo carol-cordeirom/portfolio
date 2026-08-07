@@ -1,0 +1,40 @@
+:root {
+  /* Colors — Figma variables */
+  --color-text-primary: #ffffff;
+  --color-text-primary-low: #696c73;
+  --color-text-secondary-low: #303134;
+  --color-bg-primary: #1d1d1f;
+  --color-bg-secondary: #efefef;
+  --color-shape-decorative: #303134;
+  --color-shape-decorative-low: #434549;
+
+  /* Colors — extracted from design */
+  --color-border-subtle: #464747;
+  --color-card-vivo: #a888e2;
+  --color-card-praseg: #516eeb;
+  --color-card-twism: #0a006e;
+
+  /* Typography — font families */
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-basis-grotesque: "Basis Grotesque Arabic Pro", "Inter", sans-serif;
+
+  /* Spacing — section padding */
+  --section-px-xl: 96px;
+  --section-px-md: 40px;
+  --section-px-sm: 24px;
+  --section-py-xl: 152px;
+  --section-py-lg: 144px;
+  --section-py-md: 96px;
+  --section-py-sm: 56px;
+
+  /* Spacing — navbar */
+  --navbar-h: 88px;
+  --navbar-gap: 80px;
+
+  /* Spacing — cards grid */
+  --grid-gap-x: 48px;
+  --grid-gap-y: 128px;
+  --card-stack-md: 88px;
+  --card-stack-sm: 32px;
+}
