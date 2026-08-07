@@ -18,9 +18,9 @@ export default function ExperienceSection() {
             </p>
           )}
 
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 lg:gap-16">
+          <div className="flex flex-col lg:flex-row items-start lg:items-stretch justify-between gap-10 lg:gap-16">
             {/* Role title & meta */}
-            <div className="flex flex-col justify-between gap-6 lg:gap-0 lg:h-full uppercase shrink-0">
+            <div className="flex flex-col justify-between gap-6 lg:gap-0 uppercase shrink-0">
               <div className="font-space-grotesk font-normal text-text-secondary-low text-display-role-sm md:text-display-role-md lg:text-display-role-lg xl:text-display-role-xl">
                 {role.title.map((line) => (
                   <p key={line} className="leading-[0.985]">

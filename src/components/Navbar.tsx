@@ -1,4 +1,5 @@
 import { NAV_ITEMS } from "@/data/portfolio";
+import { smoothScrollTo } from "@/utils/smoothScroll";
 import { useState } from "react";
 
 interface NavbarProps {
@@ -18,6 +19,10 @@ export default function Navbar({ activeSection }: NavbarProps) {
             <a
               key={item.href}
               href={item.href}
+              onClick={(e) => {
+                e.preventDefault();
+                smoothScrollTo(item.href.slice(1));
+              }}
               className={`py-8 uppercase font-space-grotesk ${
                 isActive
                   ? "text-nav-selected font-bold text-text-primary"
@@ -64,7 +69,11 @@ export default function Navbar({ activeSection }: NavbarProps) {
             <a
               key={item.href}
               href={item.href}
-              onClick={() => setMobileOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                setMobileOpen(false);
+                smoothScrollTo(item.href.slice(1));
+              }}
               className="block py-4 uppercase font-space-grotesk text-nav-default text-text-primary-low"
             >
               {item.label}
